@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+@keyframes moveBackground {
+  0% {
+    background-position: center 0%;
+  }
+  100% {
+    background-position: center 100%;
+  }
+}
+
+::selection{
+  color: #fff;
+  background: #1cc7d0;
+}
+
+.wrapper{
+  height: 550px;
+  width: 440px;
+  position: relative;
+  transform-style: preserve-3d;
+ perspective: 1000px;
+}
+
+.wrapper .card{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  background: transparent;
+  border-radius: 14px;
+  transform: translateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.4);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+.wrapper:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+
+.wrapper .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.wrapper .back-face{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+
+.wrapper:hover > .back-face{
+  transform: rotateY(0deg);
+}
+
+.wrapper .back-face img{
+  height: 250px;
+  width: 250px;
+  padding: 4px;
+  border-radius: 50%;
+  background: white;
+}
+
+.wrapper .back-face .info {
+  text-align: center;
+}
+
+.wrapper .back-face .info {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold; 
+  top: 10px;
+}
+
+.title,
+.title + svg,
+.title + span {
+  display: inline-block; 
+}
+
+span {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  color: white;
+  position: relative;
+  top: -15px;
+}

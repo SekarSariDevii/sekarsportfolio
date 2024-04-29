@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta property="og:description" content="Sekar Sari Devi | Deigner Graphic | Photographer | Videographer">
+  <meta property="og:image" content="https://wallpapers.com/images/high/aesthetic-pink-anime-3840-x-2160-background-yf5rooj196u4ybg5.webp">
+  <title>Sekar Devi</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" href="sekar.jpg" type="image/x-icon">
+  <style>
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 9999;
+    }
+
+    .loading-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .button-56.loading {
+      background-color: transparent;
+      border-color: #111;
+      color: white;
+      pointer-events: none; /* Disable pointer events */
+    }
+
+    /* Your existing CSS styles */
+    .button-56 {
+      align-items: center;
+      background-color: transparent;
+      border: 1px solid #111;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: white;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      height: 48px;
+      justify-content: center;
+      line-height: 24px;
+      max-width: 100%;
+      padding: 0 25px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      margin: 0 auto;
+    }
+
+    .button-56:after {
+      background-color: #111;
+      border-radius: 8px;
+      content: "";
+      display: block;
+      height: 48px;
+      left: 0;
+      width: 100%;
+      position: absolute;
+      top: -2px;
+      transform: translate(8px, 8px);
+      transition: transform 0.2s ease-out;
+      z-index: -1;
+    }
+
+    .button-56:hover:after {
+      transform: translate(0, 0);
+    }
+
+    .button-56:active {
+      background-color: #ffdeda;
+      outline: 0;
+    }
+
+    .button-56:hover {
+      outline: 0;
+    }
+
+    @media (min-width: 768px) {
+      .button-56 {
+        padding: 0 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loading-text">Loading...</div>
+  </div>
+
+  <div class="wrapper">
+    <div class="card front-face">
+      <img src="sekar.jpg">
+    </div>
+    <div class="card back-face">
+      <img src="image/sekar.jpg">
+      <div class="info">
+        <span style="position: relative; top: -20px;">Sekar Sari Devi</span>
+
+        <svg style="color: #2b79fa; vertical-align: middle; position: relative; top: -23px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </svg>
+        <p>
+          Work internship at Kremov Pictures, I have experience working in a production house. I make posters, design, editing, videography, photography, filming behind the scenes of their film projects
+        </p>
+        <button class="button-56 loading" role="button" onclick="window.location.href='https://sekarsaridevii.000webhostapp.com'">Click Me!</button>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loading-overlay').style.display = 'none';
+        document.querySelector('.button-56').classList.remove('loading'); // Remove loading class after 3 seconds
+      }, 3000); // Hide loading after 3 seconds
+    });
+  </script>
+  <script>
+    window.onload = () => {
+      let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+      el.parentNode.removeChild(el);
+    }
+  </script>
+</body>
+
+</html>
